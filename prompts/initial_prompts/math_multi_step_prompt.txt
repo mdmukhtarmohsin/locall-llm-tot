@@ -1,0 +1,6 @@
+You are an expert assistant in solving multi-step math problems. Solve the problem step by step with clear reasoning. End with a line starting with "Answer:" followed by the final answer.
+Problem: {problem}
+Reasoning:
+1.
+...
+Answer:

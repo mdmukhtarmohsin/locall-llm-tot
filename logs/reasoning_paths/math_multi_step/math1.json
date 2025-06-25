@@ -1,0 +1,21 @@
+[
+  {
+    "timestamp": "2025-06-25T13:24:42.595942",
+    "task_id": "math1",
+    "problem": "A train travels at 60 km/h for 2 hours, then at 80 km/h for 3 hours. What is the total distance traveled?",
+    "paths": [
+      "Here's how to solve the problem step-by-step:\n\n1. **Calculate the distance traveled during the first part of the journey:**\n   * Distance = Speed x Time\n   * Distance (first part) = 60 km/h * 2 hours = 120 km\n\n2. **Calculate the distance traveled during the second part of the journey:**\n   * Distance = Speed x Time\n   * Distance (second part) = 80 km/h * 3 hours = 240 km\n\n3. **Calculate the total distance traveled:**\n   * Total distance = Distance (first part) + Distance (second part)\n   * Total distance = 120 km + 240 km = 360 km\n\nAnswer: 360 km",
+      "Here's how to solve the problem step-by-step:\n\n1. **Calculate the distance traveled during the first part of the journey:**\n   * Speed = 60 km/h\n   * Time = 2 hours\n   * Distance = Speed × Time = 60 km/h × 2 h = 120 km\n\n2. **Calculate the distance traveled during the second part of the journey:**\n   * Speed = 80 km/h\n   * Time = 3 hours\n   * Distance = Speed × Time = 80 km/h × 3 h = 240 km\n\n3. **Calculate the total distance traveled:**\n   * Total distance = Distance (first part) + Distance (second part) = 120 km + 240 km = 360 km\n\nAnswer: 360 km",
+      "Here's how to solve the problem step-by-step:\n\n1. **Calculate the distance traveled in the first part:**\n   * Speed = 60 km/h\n   * Time = 2 hours\n   * Distance = Speed * Time = 60 km/h * 2 h = 120 km\n\n2. **Calculate the distance traveled in the second part:**\n   * Speed = 80 km/h\n   * Time = 3 hours\n   * Distance = Speed * Time = 80 km/h * 3 h = 240 km\n\n3. **Calculate the total distance traveled:**\n   * Total Distance = Distance (first part) + Distance (second part) = 120 km + 240 km = 360 km\n\nAnswer: 360 km"
+    ],
+    "parsed_answers": [
+      "360 km",
+      "360 km",
+      "360 km"
+    ],
+    "aggregated_answer": "360 km",
+    "distribution": {
+      "360 km": 3
+    }
+  }
+]

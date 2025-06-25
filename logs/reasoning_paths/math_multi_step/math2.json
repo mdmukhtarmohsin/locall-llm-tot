@@ -1,0 +1,21 @@
+[
+  {
+    "timestamp": "2025-06-25T13:27:28.200696",
+    "task_id": "math2",
+    "problem": "If 5 times a number minus 7 equals 18, what is the number?",
+    "paths": [
+      "Let's represent the number as 'x'.\nThe problem states: \"5 times a number minus 7 equals 18\". We can translate this into an algebraic equation:\n5x - 7 = 18\n\nNow, we need to solve for x.\n1. Add 7 to both sides of the equation:\n   5x - 7 + 7 = 18 + 7\n   5x = 25\n\n2. Divide both sides by 5:\n   5x / 5 = 25 / 5\n   x = 5\n\nAnswer: 5",
+      "Let's represent the number as 'x'.\nThe problem states: \"5 times a number minus 7 equals 18\".\nWe can translate this into an equation: 5x - 7 = 18\n\nNow, we will solve for x:\n1. Add 7 to both sides of the equation:\n   5x - 7 + 7 = 18 + 7\n   5x = 25\n\n2. Divide both sides of the equation by 5:\n   5x / 5 = 25 / 5\n   x = 5\n\nAnswer: 5",
+      "Let's represent the number as 'x'.  We can translate the word problem into an algebraic equation:\n\n1.  \"5 times a number\" can be written as 5x.\n2.  \"minus 7\" means we subtract 7.\n3.  The whole expression \"5 times a number minus 7\" is equal to 18. So, we have the equation 5x - 7 = 18.\n\nNow, let's solve for x:\n\n1.  Add 7 to both sides of the equation:\n    5x - 7 + 7 = 18 + 7\n    5x = 25\n2.  Divide both sides by 5:\n    5x / 5 = 25 / 5\n    x = 5\n\nAnswer: 5"
+    ],
+    "parsed_answers": [
+      "5",
+      "5",
+      "5"
+    ],
+    "aggregated_answer": "5",
+    "distribution": {
+      "5": 3
+    }
+  }
+]

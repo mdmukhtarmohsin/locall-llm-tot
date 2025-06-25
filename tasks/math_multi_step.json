@@ -1,0 +1,17 @@
+[
+  {
+    "id": "math1",
+    "problem": "A train travels at 60 km/h for 2 hours, then at 80 km/h for 3 hours. What is the total distance traveled?",
+    "answer": "360 km"
+  },
+  {
+    "id": "math2",
+    "problem": "If 5 times a number minus 7 equals 18, what is the number?",
+    "answer": "5"
+  },
+  {
+    "id": "math3",
+    "problem": "A rectangle’s length is twice its width. If the perimeter is 60 cm, what are the length and width?",
+    "answer": "Width = 10 cm; Length = 20 cm"
+  }
+]

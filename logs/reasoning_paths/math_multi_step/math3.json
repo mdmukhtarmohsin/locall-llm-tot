@@ -1,0 +1,21 @@
+[
+  {
+    "timestamp": "2025-06-25T13:32:27.208952",
+    "task_id": "math3",
+    "problem": "A rectangle’s length is twice its width. If the perimeter is 60 cm, what are the length and width?",
+    "paths": [
+      "Let's analyze the problem step by step.\n1. Let the width of the rectangle be $w$ cm.\n2. The length of the rectangle is twice its width, so the length is $2w$ cm.\n3. The perimeter of a rectangle is given by the formula $P = 2l + 2w$, where $l$ is the length and $w$ is the width.\n4. We are given that the perimeter is 60 cm. So, $2l + 2w = 60$.\n5. Substituting $l = 2w$ into the perimeter equation, we have $2(2w) + 2w = 60$.\n6. Simplifying, we get $4w + 2w = 60$.\n7. Combining like terms, we have $6w = 60$.\n8. Dividing both sides by 6, we get $w = 10$.\n9. The width of the rectangle is 10 cm.\n10. Since the length is twice the width, the length is $2w = 2(10) = 20$ cm.\n\nAnswer: Length = 20 cm, Width = 10 cm",
+      "Here's how to solve the problem step-by-step:\n\n1. **Define variables:** Let the width of the rectangle be represented by 'w'. Since the length is twice the width, the length will be '2w'.\n\n2. **Perimeter Formula:** The perimeter of a rectangle is calculated using the formula: P = 2l + 2w, where P is the perimeter, l is the length, and w is the width.\n\n3. **Substitute values:** We are given that the perimeter (P) is 60 cm.  Substituting the length and width into the formula, we get: 60 = 2(2w) + 2w.\n\n4. **Simplify and solve for w:**\n   * 60 = 4w + 2w\n   * 60 = 6w\n   * w = 60 / 6\n   * w = 10 cm\n\n5. **Find the length:** Since the length (l) is twice the width (w),  l = 2 * w = 2 * 10 = 20 cm.\n\nAnswer: Length = 20 cm, Width = 10 cm",
+      "Let the width of the rectangle be denoted by 'w'.\nSince the length is twice the width, the length is '2w'.\n\nThe perimeter of a rectangle is given by the formula: P = 2(length + width).\nWe are given that the perimeter is 60 cm. Substituting the values, we get:\n60 = 2(2w + w)\n60 = 2(3w)\n60 = 6w\nNow, we can solve for the width, w:\nw = 60 / 6\nw = 10 cm\n\nThe length is twice the width, so the length is 2w = 2 * 10 = 20 cm.\n\nWe can verify our answer by calculating the perimeter: 2(length + width) = 2(20 + 10) = 2(30) = 60 cm.\n\nAnswer: Length = 20 cm, Width = 10 cm"
+    ],
+    "parsed_answers": [
+      "Length = 20 cm, Width = 10 cm",
+      "Length = 20 cm, Width = 10 cm",
+      "Length = 20 cm, Width = 10 cm"
+    ],
+    "aggregated_answer": "Length = 20 cm, Width = 10 cm",
+    "distribution": {
+      "Length = 20 cm, Width = 10 cm": 3
+    }
+  }
+]
