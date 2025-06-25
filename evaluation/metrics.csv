@@ -1,0 +1,4 @@
+domain,task_id,predicted,ground_truth,correct,accuracy_overall
+math_multi_step,math1,360 km,360 km,True,0.6666666666666666
+math_multi_step,math2,5,5,True,0.6666666666666666
+math_multi_step,math3,"length = 20 cm, width = 10 cm",width = 10 cm; length = 20 cm,False,0.6666666666666666

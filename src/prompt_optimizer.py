@@ -16,14 +16,22 @@ def identify_failures(results_dir: Path, tasks):
             continue
         with open(log_path, 'r', encoding='utf-8') as f:
             entry = json.load(f)
-        pred = str(entry.get('aggregated_answer', '')).strip()
+        # Handle list of logs: use last entry
+        if isinstance(entry, list) and entry:
+            entry_data = entry[-1]
+        elif isinstance(entry, dict):
+            entry_data = entry
+        else:
+            # Unexpected format; skip this task
+            continue
+        pred = str(entry_data.get('aggregated_answer', '')).strip()
         if pred.lower() != truth.lower():
             failures.append({
                 'task_id': task_id,
                 'problem': task.get('problem'),
                 'ground_truth': truth,
                 'predicted': pred,
-                'paths': entry.get('paths', []),
+                'paths': entry_data.get('paths', []),
             })
     return failures
 
@@ -42,6 +50,7 @@ def construct_optimizer_prompt(failures, current_prompt_text, max_cases=5):
             prompt += f"\nPredicted: {case['predicted']}"
             prompt += "\nReasoning Paths:\n"
             for path in case['paths']:
+                # Safely include reasoning text
                 prompt += "- ```" + path.replace('```', "```") + "```\n"
             prompt += "\n"
     prompt += "Provide a revised prompt template, clearly indicating placeholders (e.g., {problem})."
@@ -66,8 +75,10 @@ def optimize_prompt(domain: str, prompt_file: Path, failures, output_prompt_file
             new_prompt = str(response).strip()
     except Exception as e:
         raise RuntimeError(f"Ollama prompt optimization error: {e}")
+    # Save optimized prompt
     output_prompt_file.parent.mkdir(parents=True, exist_ok=True)
     output_prompt_file.write_text(new_prompt, encoding='utf-8')
+    # Log optimization run
     log = {
         'timestamp': current_timestamp(),
         'domain': domain,

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-06-25T14:00:57.238102",
+  "domain": "math_multi_step",
+  "input_prompt_file": "prompts/initial_prompts/math_multi_step_prompt.txt",
+  "output_prompt_file": "prompts/optimized_prompts/math_multi_step_prompt_v1.txt",
+  "failures_sample_count": 1,
+  "new_prompt_excerpt": "Okay, here's a revised prompt template designed to improve the reliability of solving structured reasoning math problems, incorporating elements from the successful examples and addressing potential w..."
+}

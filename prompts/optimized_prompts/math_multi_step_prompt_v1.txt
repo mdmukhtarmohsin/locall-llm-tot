@@ -1,0 +1,79 @@
+Okay, here's a revised prompt template designed to improve the reliability of solving structured reasoning math problems, incorporating elements from the successful examples and addressing potential weaknesses.  I've added more explicit guidance and a focus on breaking down the problem.
+
+```
+You are a meticulous problem-solving assistant. Your goal is to solve multi-step mathematical problems by systematically breaking them down into smaller, manageable steps.  Clearly articulate each step of your reasoning process.  Be particularly careful with units.  Always check your work to ensure it makes sense.
+
+Problem: {problem}
+
+**Step 1: Define Variables:**  Clearly state what variables you are using and what they represent. (e.g., "Let 'w' represent the width...")
+
+**Step 2:  Formulate Equations:** Translate the problem into mathematical equations. Show all your work.
+
+**Step 3:  Solve the Equations:**  Solve the equations you've created.  Show your steps clearly.
+
+**Step 4: Check Your Answer:**  Does your solution make sense in the context of the original problem?  Are the units correct?  Can you verify your solution by plugging it back into the original problem?
+
+Answer: Length = {length}, Width = {width}
+```
+
+**Rationale for Changes and Improvements:**
+
+* **More Detailed Instructions:** The initial prompt is strengthened with explicit instructions on how to approach the problem – define variables first. This is crucial for many problems.
+* **Structured Steps:** Introducing numbered steps (“Step 1”, “Step 2”, etc.) guides the model's output, making it more predictable and easier to parse.
+* **Emphasis on Units:** Adding "Be particularly careful with units" addresses a common source of errors.
+* **Verification Step:**  Including a "Check Your Answer" step forces the model to think critically about its solution and ensures it aligns with the original problem.
+* **Placeholders for Answer:** Using placeholders for length and width ({length}, {width}) ensures the answer is easily extracted and formatted correctly.
+
+**Few-Shot Examples (Using the revised prompt):**
+
+**Example 1:** (Based on the original problem)
+
+```
+You are a meticulous problem-solving assistant. Your goal is to solve multi-step mathematical problems by systematically breaking them down into smaller, manageable steps.  Clearly articulate each step of your reasoning process.  Be particularly careful with units.  Always check your work to ensure it makes sense.
+
+Problem: A rectangle’s length is twice its width. If the perimeter is 60 cm, what are the length and width?
+
+**Step 1: Define Variables:** Let 'w' represent the width of the rectangle in centimeters. Since the length is twice the width, let '2w' represent the length in centimeters.
+
+**Step 2: Formulate Equations:** The perimeter of a rectangle is given by P = 2l + 2w. We are given that the perimeter is 60 cm.  Therefore, 60 = 2(2w) + 2w.
+
+**Step 3: Solve the Equations:**
+60 = 4w + 2w
+60 = 6w
+w = 60 / 6
+w = 10
+
+**Step 4: Check Your Answer:**  If w = 10 cm, then the length is 2w = 2 * 10 = 20 cm.  The perimeter would be 2(20) + 2(10) = 40 + 20 = 60 cm. This matches the given perimeter.
+
+Answer: Length = 20 cm, Width = 10 cm
+```
+
+**Example 2:** (Adding an example with fractions)
+
+```
+You are a meticulous problem-solving assistant. Your goal is to solve multi-step mathematical problems by systematically breaking them down into smaller, manageable steps.  Clearly articulate each step of your reasoning process.  Be particularly careful with units.  Always check your work to ensure it makes sense.
+
+Problem: The sum of two numbers is 24. One number is 3 more than twice the other. What are the two numbers?
+
+**Step 1: Define Variables:** Let 'x' represent the first number. Let 'y' represent the second number.
+
+**Step 2: Formulate Equations:** We are given that the sum of the two numbers is 24, so x + y = 24.  We are also given that one number is 3 more than twice the other. Let's say x is 3 more than twice y. So, x = 2y + 3.
+
+**Step 3: Solve the Equations:**
+We can substitute the expression for x from the second equation into the first equation: (2y + 3) + y = 24.
+Simplifying, we get 3y + 3 = 24.
+Subtracting 3 from both sides, we get 3y = 21.
+Dividing both sides by 3, we get y = 7.
+Now, we can find x: x = 2y + 3 = 2(7) + 3 = 14 + 3 = 17.
+
+**Step 4: Check Your Answer:**  The two numbers are 17 and 7.  Their sum is 17 + 7 = 24, which matches the problem statement. One number (17) is 3 more than twice the other (2*7+3 = 17).
+
+Answer: Number 1 = 17, Number 2 = 7
+```
+
+**Key improvements demonstrated by these examples:**
+
+*   **Structured Output:**  The numbered steps and clear variable definitions make the model's reasoning easier to follow.
+*   **Handling of different types of problems:** The examples show how the prompt can be adapted to different problem types (basic algebra, fractions).
+
+I believe this revised prompt template, combined with the provided examples, will significantly improve the reliability and accuracy of your problem-solving assistant. Remember to continue experimenting and refining the prompt based on your specific use case.

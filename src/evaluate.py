@@ -23,16 +23,26 @@ def main():
             continue
         with open(log_path, 'r', encoding='utf-8') as f:
             entry = json.load(f)
-        pred = str(entry.get('aggregated_answer', '')).strip().lower()
+        # Handle case where entry is a list of logs; pick the last entry
+        if isinstance(entry, list) and entry:
+            entry_data = entry[-1]
+        elif isinstance(entry, dict):
+            entry_data = entry
+        else:
+            # Unexpected format; skip
+            continue
+        pred = str(entry_data.get('aggregated_answer', '')).strip().lower()
         is_correct = (pred == truth)
         total += 1
         if is_correct:
             correct += 1
         rows.append({'domain': args.domain, 'task_id': task_id, 'predicted': pred, 'ground_truth': truth, 'correct': is_correct})
     accuracy = correct / total if total > 0 else 0.0
-    metrics_file = Path(args.metrics_file)
-    write_header = not metrics_file.exists()
-    with open(metrics_file, 'a', newline='', encoding='utf-8') as f:
+    metrics_path = Path(args.metrics_file)
+    # Ensure parent directory exists
+    metrics_path.parent.mkdir(parents=True, exist_ok=True)
+    write_header = not metrics_path.exists()
+    with open(metrics_path, 'a', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['domain', 'task_id', 'predicted', 'ground_truth', 'correct', 'accuracy_overall'])
         if write_header:
             writer.writeheader()
